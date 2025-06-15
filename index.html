@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>SANFytics Website</title>
+    <link rel="icon" type="image/png" href="assets/img/astra1.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: white;
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .menu {
+            display: flex;
+            gap: 50px;
+            margin-right: 50px;
+        }
+        .menu-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #007bff;
+        }
+        .container {
+            padding: 30px;
+        }
+        .title1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .teks {
+            font-size: 22px;
+            text-align: center;
+            color: #1a1a1a;
+            margin-top: 10px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: white;
+            width: 250px;
+            height: 150px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .login-button {
+            padding: 8px 16px;
+            background-color: white;
+            color: blue;
+            border: 2px solid blue;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .login-button:hover {
+            background-color: #f2f2f2;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+        }
+        .icon {
+            font-size: 30px;
+            color: #1d4ed8;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+        .btn-getstarted {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 600px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo-container">
+        <img src="assets/img/icons1.png" alt="Logo" style="height:25px; margin-right:10px;">
+        SANFytics
+    </div>
+    <div class="menu-container">
+    <div class="menu">
+      <a href="home.php">Home</a>
+      <a href="analisis.php">Analytics</a>
+      <a href="reports.php">Reports</a>
+    </div>
+    <a href="home.php" class="login-button">Started</a>
+  </div>
+</div>
+
+<div class="container">
+    <div class="title1">Analytics Platform for SANFytics.com</div>
+    <div class="teks">
+        Insights for PT Surya Artha Nusantara Finance
+    </div>
+    
+    <a href="home.php" class="btn-getstarted">Get Started</a>
+
+    <!---CARD LAYOUT--->
+    <div class="card-grid">
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <div class="title">Financial Dashboard</div>
+            <div class="description">View key financial metrics and visualizations</div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <div class="title">Market Trends</div>
+            <div class="description">Analyze industry and economic trends</div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <div class="title">Risk Assessment</div>
+            <div class="description">Evaluate credit and market risks</div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="title">Performance Analysis</div>
+            <div class="description">Track and improve financial performance</div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
